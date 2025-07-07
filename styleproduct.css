@@ -1,0 +1,229 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0 px;
+    padding: 0 px ;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;   /* Search about it */
+    scroll-behavior: smooth;
+    }
+    /* Some Variables */
+:root{                                               /* Search about it */
+    --green-color : #B85042;
+    --light-green-color :  #D3C5E5 ;   
+    --orange-color :#A7BEAE ;
+    --light-orange-color :#8171a7 ;
+    --bg-color : #fff;
+    --text-color : #1a2428;
+}
+img{
+    width : 100% ;
+}
+.products{
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto)) ;
+    gap: 1.5rem ;
+    margin-top: 2rem ;
+}
+.products-container .box{
+    padding: 20px ;
+    box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15% );
+    border-radius: 0.5rem ;
+    position: relative ;
+    background:rgb(255, 250, 250);
+}
+.products-container .box img{
+    width: 98%;
+    height: 190px ;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 30%;
+}
+.products-container .box img:hover{
+    width: 100%;
+    height: 200px ;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 30%;
+}
+.products-container .box span{
+    font-weight: 500;
+    font-size: 13px;
+
+}
+.products-container .box h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.products-container .box .price{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    color: var(--light-orange-color);
+}
+.products-container .box .price:hover{
+    color: var(--green-color);
+}
+.products-container .box .price span{
+    color: var(--text-color-color);
+}
+.products-container .box .price span:hover{
+    color: var(--green-color);
+}
+.products-container .box .bx-cart-alt{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    background-color: var(--green-color);
+    font-size: 20px;
+    color: var(--bg-color);
+    border-radius: 0.5rem 0 0.5rem 0 ;
+}
+.products-container .box .bx-cart-alt:hover{
+    background:var(--light-orange-color);
+    transition: 0.2s all linear;
+    padding: 15px;
+    cursor: pointer;
+}
+.products-container .box .like-icon{
+    position: absolute;
+    top: .6rem;
+    right: .6rem;
+    font-size: 25px;
+    color: var(--light-orange-color);
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-style: normal; /* Make the icon formal */
+        
+
+}
+.products-container .box .like-icon:hover{
+    font-size: 30px;
+    color: var(--green-color);
+    cursor: pointer;
+}
+.products-container .box .liked {
+    color: red;
+}
+.products-container .box .discount{
+    position: absolute;
+    top: .6rem;
+    left: .6rem;
+    padding:4px 18px ;
+    background-color: var(--light-green-color);
+    color: var(--bg-color);
+    clip-path: polygon(100% 0%,75% 50%, 100% 100%, 0 100%, 0 50%,0 0);
+}
+@media(max-width:884px){
+    img{
+        width : 95% ;
+    }
+    .products{
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .products-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(260px,auto)) ;
+        gap: 1rem ;
+        margin-top: 1.2rem ;
+    }
+    .products-container .box{
+        padding: 12px ;
+        box-shadow: 1px 2px 9px 3px rgb(14 55 54 / 15% );
+        border-radius: 0.5rem ;
+        position: relative ;
+        background:rgb(255, 250, 250);
+    }
+    .products-container .box img{
+        width: 98%;
+        height: 165px ;
+        object-fit: contain;
+        object-position: center;
+        border-radius: 30%;
+    }
+    .products-container .box img:hover{
+        width: 95%;
+        height: 170px ;
+        object-fit: contain;
+        object-position: center;
+        border-radius: 30%;
+    }
+    .products-container .box span{
+        font-weight: 500;
+        font-size: 11px;
+    
+    }
+    .products-container .box h2{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .products-container .box .price{
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 0.5rem;
+        color: var(--light-orange-color);
+    }
+    .products-container .box .price:hover{
+        color: var(--green-color);
+    }
+    .products-container .box .price span{
+        color: var(--text-color-color);
+    }
+    .products-container .box .price span:hover{
+        color: var(--green-color);
+    }
+    .products-container .box .bx-cart-alt{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 9px;
+        background-color: var(--green-color);
+        font-size: 18px;
+        color: var(--bg-color);
+        border-radius: 0.5rem 0 0.5rem 0 ;
+    }
+    .products-container .box .bx-cart-alt:hover{
+        background:var(--light-orange-color);
+        transition: 0.2s all linear;
+        padding: 12px;
+        cursor: pointer;
+    }
+    .products-container .box .like-icon{
+        position: absolute;
+        top: .6rem;
+        right: .6rem;
+        font-size: 22px;
+        color: var(--light-orange-color);
+        cursor: pointer;
+        transition: color 0.3s ease;
+        font-style: normal; /* Make the icon formal */
+            
+    
+    }
+    .products-container .box .like-icon:hover{
+        font-size: 25px;
+        color: var(--green-color);
+        cursor: pointer;
+    }
+    .products-container .box .liked {
+        color: red;
+    }
+    .products-container .box .discount{
+        position: absolute;
+        top: .6rem;
+        left: .6rem;
+        padding:4px 18px ;
+        background-color: var(--light-green-color);
+        color: var(--bg-color);
+        clip-path: polygon(100% 0%,75% 50%, 100% 100%, 0 100%, 0 50%,0 0);
+    }
+}

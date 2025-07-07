@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Sliding Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+           background: #c7b1e3;
+            overflow-x: hidden;
+        }
+        .slider-container {
+            display: flex;
+            flex-direction: column; /* Stack images vertically */
+            overflow-y: auto; /* Vertical scroll */
+            width: 100%;
+            height: auto; /* Take full viewport height */
+            padding: 15px;
+            gap: 8px;
+            scroll-behavior: smooth;
+        }
+        .slider-item {
+            width: 350px; /* Set fixed width for images */
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .slider-item img {
+            width: 100%; /* Make images fill the container width */
+            height: auto; /* Maintain aspect ratio, height will be auto */
+            display: block; /* Remove any extra space below images */
+        }
+        /* Optional: Styling for scroll bar to make it less visible */
+        .slider-container::-webkit-scrollbar {
+            width: 6px;
+        }
+        .slider-container::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 3.5px;
+        }
+        .slider-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider-item">
+            <img src="/grab-Ce9cG07ni1E-unsplash.jpg" alt="Image 1">
+        </div>
+ 
+        <div class="slider-item">
+            <img src="/DALL·E 2025-01-10 21.01.52 - A luxurious hotel kitchen with a professional chef preparing gourmet dishes. The scene shows high-end cooking equipment, stainless steel countertops,.jpg" alt="Image 6">
+        </div>
+        <div class="slider-item">
+            <img src="/engin-akyurt-6dPXcMvniHU-unsplash.jpg" alt="Image 7">
+        </div>
+        <div class="slider-item">
+            <img src="/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image 8">
+        </div>
+        <div class="slider-item">
+            <img src="/nabil-kassir-x9ZkA7Yg1f0-unsplash.jpg" alt="Image 9">
+        </div>
+        <div class="slider-item">
+            <img src="/saile-ilyas-SiwrpBnxDww-unsplash.jpg" alt="Image 10">
+        </div>
+    </div>
+    <script>
+        // Optional: Auto scroll functionality for a continuous sliding effect
+        const sliderContainer = document.querySelector('.slider-container');
+        let scrollPosition = 0;
+
+        setInterval(() => {
+            if (scrollPosition < sliderContainer.scrollHeight - sliderContainer.clientHeight) {
+                scrollPosition += 5;
+                sliderContainer.scrollTo(0, scrollPosition);
+            } else {
+                scrollPosition = 0;
+                sliderContainer.scrollTo(0, 0);
+            }
+        }, 30); // Change interval for faster/slower sliding
+    </script>
+</body>
+</html>
+    

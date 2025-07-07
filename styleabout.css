@@ -1,0 +1,75 @@
+.about{
+        background:#be5b4e ;
+        background-size: cover;
+        max-width: 968px ;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-radius: 3%;
+        }
+
+    .about-text span{
+            font-weight: 700px;
+            text-transform: uppercase;
+            color: var(--green-color);
+            }
+
+    .about-text p{
+            margin: 0.5rem 0 1rem ;
+            font-weight: 500px;
+    }
+    
+    .about iamiframe{
+        border-radius: 5%;
+        margin: 0.2rem;
+        border: 1rem solid #be5b4e ;
+    }
+    @media(max-width:978px){
+        .about{
+                background:#be5b4e ;
+                background-size: cover;
+                max-width: 700px ;
+                margin-left: auto;
+                margin-right: auto;
+                /* display: grid; */
+                /* grid-template-columns: repeat(auto-fit,minmax(21rem , auto)); */
+                /* align-items: center; */
+                flex-direction: column;
+                gap: 1rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                border-radius: 3%;
+                }
+        
+            .about-text span{
+                    font-weight: 600px;
+                    text-transform: uppercase;
+                    color: var(--green-color);
+                    }
+        
+            .about-text p{
+                    margin: 0.2rem 0 0.5rem ;
+                    font-weight: 500px;
+            }
+            
+            .about iamiframe{
+                position: relative;
+                align-content: center;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 5%;
+                margin-right: 5rem;
+                margin-left: 5rem;
+                border: 1rem solid #be5b4e ;
+            }
+    }

@@ -1,0 +1,218 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0 px;
+    padding: 0 px ;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;   /* Search about it */
+    scroll-behavior: smooth;
+    }
+
+/* Some Variables */
+:root{                                               /* Search about it */
+    --green-color : #B85042;
+    --light-green-color :  #D3C5E5 ;   
+    --orange-color :#A7BEAE ;
+    --light-orange-color :#8171a7 ;
+    --bg-color : #fff;
+    --text-color : #1a2428;
+}
+img{
+    width : 100% ;
+}
+.categories{
+    max-width: 968px ;
+    margin-left: auto;
+    margin-right: auto;
+}
+.categories-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px , auto) );
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.categories-container .box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 0.56rem;
+    }
+.categories-container .box img{
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 5%;
+}
+.categories-container .box img:hover{
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 2%;
+}
+.categories-container .box h2{
+    font-size: 1rem ;
+    font-weight: 600 ;
+    }
+.categories-container .box span{
+    font-size: 0.8rem ;
+    font-weight: 400 ;
+    margin-bottom: 1rem;
+    }
+.categories-container .box .bx{
+    padding: 10px;
+    background: var(--green-color);
+    color: var(--bg-color);
+    border-radius: 5rem;
+    margin-top: 2rem;
+    position: absolute;
+    bottom: -8%;
+    display: none;
+    }
+.categories-container .box .bx:hover{
+        background: var(--light-orange-color);
+        transition: 0.2s all linear;
+    }
+.categories-container .box:hover .bx{
+        display: block;
+        transition: 0.2s all linear;
+    }
+.box1{
+    background:#df9d95;
+}
+.box2{
+    background:  #c58178;
+}
+.box3{
+    background:#be7167;
+}
+.box4{
+    background: #b36359;
+}
+.box5{
+    background:  #B85042;
+}
+.box1:hover{
+    background:#B85042;
+    padding: 5px;
+}
+.box2:hover{
+    background: #B85042;
+    padding: 5px;
+}
+.box3:hover{
+    background:#B85042;
+    padding: 5px;
+}
+.box4:hover{
+    background: #B85042;
+    padding: 5px;
+}
+.box5:hover{
+    background: #B85042;
+    padding: 5px;
+}
+@media(max-width:884px){
+    img{
+        width : 95% ;
+    }
+    .categories{
+        max-width: 700px ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .categories-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(180px , auto) );
+        gap: 0.8rem;
+        margin-top: 1.5rem;
+    }
+    .categories-container .box{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px;
+        border-radius: 0.56rem;
+        }
+    .categories-container .box img{
+        width: 95px;
+        height: 95px;
+        object-fit: contain;
+        object-position: center;
+        border-radius: 5%;
+    }
+    .categories-container .box img:hover{
+        width: 98px;
+        height: 98px;
+        object-fit: contain;
+        object-position: center;
+        border-radius: 2%;
+    }
+    .categories-container .box h2{
+        font-size: 0.9rem ;
+        font-weight: 600 ;
+        }
+    .categories-container .box span{
+        font-size: 0.7rem ;
+        font-weight: 400 ;
+        margin-bottom: 0.9rem;
+        }
+    .categories-container .box .bx{
+        padding: 8px;
+        background: var(--green-color);
+        color: var(--bg-color);
+        border-radius: 3rem;
+        margin-top: 1rem;
+        position: absolute;
+        bottom: -8%;
+        display: none;
+        }
+    .categories-container .box .bx:hover{
+            background: var(--light-orange-color);
+            transition: 0.2s all linear;
+        }
+    .categories-container .box:hover .bx{
+            display: block;
+            transition: 0.2s all linear;
+        }
+    .box1{
+        background:#df9d95;
+    }
+    .box2{
+        background:  #c58178;
+    }
+    .box3{
+        background:#be7167;
+    }
+    .box4{
+        background: #b36359;
+    }
+    .box5{
+        background:  #B85042;
+    }
+    .box1:hover{
+        background:#B85042;
+        padding: 4px;
+    }
+    .box2:hover{
+        background: #B85042;
+        padding: 4px;
+    }
+    .box3:hover{
+        background:#B85042;
+        padding: 4px;
+    }
+    .box4:hover{
+        background: #B85042;
+        padding: 4px;
+    }
+    .box5:hover{
+        background: #B85042;
+        padding: 4px;
+    }
+}
